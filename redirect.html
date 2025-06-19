@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirigiendo...</title>
+  <script>
+    // Extraer el parámetro 'nombre'
+    const urlParams = new URLSearchParams(window.location.search);
+    const nombre = urlParams.get('nombre');
+
+    // Solo por control: si nombre está presente, redirigimos
+    if (nombre) {
+      // Aquí puedes hacer validaciones si quieres
+      window.location.href = "https://hutchisonports.com.mx";
+    } else {
+      document.write("<h2>Nombre no válido o faltante en el QR.</h2>");
+    }
+  </script>
+</head>
+<body>
+  <p>Redirigiendo al sitio del evento...</p>
+</body>
+</html>
